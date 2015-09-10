@@ -25,16 +25,17 @@ body {
     font-family: 'Raleway', sans-serif;
     line-height: 30px;
     font-size: 16px;
-    background-color: #b1dfce;
-    /*background-color: #5CD88D;*/
+    background-color: #5CA8DC;
+    /*background-color: #b1dfce;*/
     padding-top:60px;
 }
 h3 {
     font-weight:900;
-    color:#5CD88D;
+    color:#5a5b5f;
+    /*color:#5CD88D;*/
 }
 .set-clr {
-    color:#5CD88D;
+    color:#5a5b5f;
 }
 
  /*================================
