@@ -61,67 +61,64 @@
                         <div class="col-md-12">
                             <h3>Laravel Valet</h3>
                             <hr />  
-                        Setting up Laravel Valet
-
-You will need to install Homebrew (http://brew.sh/) in order to use Laravel Valet.
-
+                        You will need to install Homebrew (http://brew.sh/) in order to use Laravel Valet.
+<br>
 If Homebrew isn't already installed, paste this into the command line:
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
+<b>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</b>
+<br>
 It may prompt you for a password during installation. Use the same password from your local computer.
-
+<br>
 Make sure you have the latest version: brew update
-
-Install PHP 7.0 using Homebrew: brew install homebrew/php/php70
-
-Install Valet with Composer: composer global require laravel/valet
-
+<br>
+Install PHP 7.0 using Homebrew: <b>brew install homebrew/php/php70</b>
+<br>
+Install Valet with Composer: <b>composer global require laravel/valet</b>
+<br>
 The installation worked well for me. (And composer hates me, so that's saying something.)
-
-Now: valet install
-
+<br>
+Now: <b>valet install</b>
+<br>
 When I tried to install I got a 'command not found: valet' error. I fixed it by going into my bash profile and adding:
-
-alias valet="~/.composer/vendor/bin/valet"
-
+<br>
+<b>alias valet="~/.composer/vendor/bin/valet"</b>
+<br>
 You may want to add an alias regardless if you don't have one. It should make working with valet a little easier.
-
+<br>
 Now it's time to make sure Valet is running.
-
+<br>
 Make a folder on your desktop and cd into it.
-Use: valet park
-
-Next, create a new Laravel project: laravel new example
-
+Use: <b>valet park</b>
+<br>
+Next, create a new Laravel project: <b>laravel new example</b>
+<br>
 Because my .bash_profile will never love me, I had to go through some hoops to get this set up. Regardless, if you need an alias for laravel:
-
-alias laravel='~/.composer/vendor/bin/laravel'
-
+<br>
+<b>alias laravel='~/.composer/vendor/bin/laravel'</b>
+<br>
 Then you'll have to source your bash profile. For me, I use:
-source ~/.bash_profile
-
+<b>source ~/.bash_profile</b>
+<br>
 It is probably different from yours.
-
-At this point I used 'composer install'
-
+<br>
+At this point I used <b>composer install</b>
+<br>
 Once your project is created, open it in your browser.
-My project name was 'example' so I put example.dev in my browser.
-
-Now, whenever you go to http://folder-name.dev you will be able to see the site. (WITHOUT SWITCHING IT IN MAMP!!)
-
-You can also share your local instance: valet share
-
+My project name was 'example' so I put <b>example.dev</b> in my browser.
+<br>
+Now, whenever you go to <b>http://folder-name.dev</b> you will be able to see the site. (WITHOUT SWITCHING IT IN MAMP!!)
+<br>
+You can also share your local instance: <b>valet share</b>
+<br>
 There will be links in there you can copy and send to whoever you want. They don't have to have valet installed on their computer for it to work.
-
-NOTE: To share the site, your 'tunnel' must be open. If you Ctrl+C out of the 'valet share' screen, they won't be able to view your local instance.
-
-My site is not fully set up, but when I used valet share I was able to see the HTTP Requests showing '500 Internal Server Error.'
-
-Another thing to be excited about: valet logs
-
+<br>
+<b>NOTE: To share the site, your 'tunnel' must be open. If you Ctrl+C out of the 'valet share' screen, they won't be able to view your local instance.</b>
+<br>
+Another thing to be excited about: <b>valet logs</b>
+<br>
 Now you can open the logs right in the command line.
+<br>
+<b>Small note: Make sure to change '.env example' to 'env' and generate an Application key. That messed me up for a second.</b>
 
-Small note: Make sure to change '.env example' to 'env' and generate an Application key. That messed me up for a second.
                         </div>
 
                     </div>
